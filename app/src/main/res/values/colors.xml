@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#E0008F</color>
+    <color name="purple_500">#E0008F</color>
+    <color name="purple_700">#111820</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_bg">#9CFFFFFF</color>
+    <color name="ScreenBgColor">#111820</color>
+    <color name="indicatorColor">#E0008F</color>
+    <color name="enter_num_txt_color">#8A8B8E</color>
+    <color name="one">#FFDAAA</color>
+    <color name="two">#EAFFAA</color>
+    <color name="home_page_btn_bg">#30363e</color>
+    <color name="nav_icon_color">#898E93</color>
+    <color name="chip_unselected_bg">#328B8C8F</color>
+    <color name="swiggy_orderNow">#FC8019</color>
+    <color name="devider">#418A8B8E</color>
+    <color name="card_bg">#0c131f</color>
+    <color name="white80">#CCFFFFFF</color>
+    <color name="search_divider_color">#25FFFFFF</color>
+    <color name="search_divider_color2">#12FFFFFF</color>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+        <fragment
+            android:id="@+id/fragmentContainerView"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="55dp"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toTopOf="@+id/smoothBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navGraph="@navigation/bottom_nav_graph" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="735dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/bottom_nav"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/smoothBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:textColor="@color/indicatorColor"
+        app:textSize="14sp"
+        app:iconSize="18dp"
+        app:indicatorColor="#36E0008F"
+        app:indicatorRadius="50dp"
+        app:sideMargins="10dp"
+        app:backgroundColor="@color/ScreenBgColor"
+        app:itemPadding="10dp"
+        app:iconTint="@color/enter_num_txt_color"
+        app:iconTintActive="@color/indicatorColor"
+        app:menu="@menu/bottom_nav"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

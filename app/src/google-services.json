@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "36852530524",
+    "project_id": "sdc-app-17476",
+    "storage_bucket": "sdc-app-17476.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36852530524:android:e4a5105a5556a252311599",
+        "android_client_info": {
+          "package_name": "com.GlobalCinemaRelease.sdc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36852530524-2h8l58jtcj0rmm9618bnurkdrut80btp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.GlobalCinemaRelease.sdc",
+            "certificate_hash": "cc96bf69bd03e35d4c2350cfa973921a022f2dbe"
+          }
+        },
+        {
+          "client_id": "36852530524-kg3i6esgcb9njb0gma32eev7cmau7mcm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6kDmDwwDwleQKlwSv5GdiBo02kqH5a_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36852530524-kg3i6esgcb9njb0gma32eev7cmau7mcm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "36852530524-m039epkq1ok4bscvqfu1osjr5ootbsrr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "GlobalCinemaRelease.SDC",
+                "app_store_id": "983963869"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

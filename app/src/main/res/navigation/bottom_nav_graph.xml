@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/bot_nva_home">
+
+    <fragment
+        android:id="@+id/bot_nva_home"
+        android:name="com.GlobalCinemaRelease.sdc.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/bot_nva_search"
+        android:name="com.GlobalCinemaRelease.sdc.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/bot_nva_watchList"
+        android:name="com.GlobalCinemaRelease.sdc.WatchListFragment"
+        android:label="fragment_watch_list"
+        tools:layout="@layout/fragment_watch_list" />
+    <fragment
+        android:id="@+id/bot_nva_profile"
+        android:name="com.GlobalCinemaRelease.sdc.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

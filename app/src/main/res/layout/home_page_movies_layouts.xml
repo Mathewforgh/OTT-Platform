@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="162dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:backgroundTint="@color/ScreenBgColor"
+    android:layout_marginEnd="8dp">
+
+    <ImageView
+        android:id="@+id/movies_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/beast"
+        android:scaleType="centerCrop"/>
+</androidx.cardview.widget.CardView>

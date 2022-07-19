@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpVerificationPage"
+    android:background="@color/ScreenBgColor"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="631dp"
+
+            android:text="@string/otp_verification"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/entered_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/_91_8220901760"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/change_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/change"
+            android:textColor="@color/indicatorColor"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView8"
+            app:layout_constraintStart_toEndOf="@+id/entered_num_tv"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            app:layout_constraintVertical_bias="0.076" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="77dp"
+            android:layout_marginEnd="91dp"
+            android:layout_marginBottom="550dp"
+            android:text="@string/we_have_sent_you_an_otp_to_your_registered_mobile_number"
+            android:textColor="@color/enter_num_txt_color"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="137dp"
+            android:layout_marginBottom="486dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/ed_tx_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/enter_num_txt_color"
+                android:hint="@string/_0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:nextFocusForward="@id/ed_tx_2"
+                android:focusable="true"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/enter_num_txt_color"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/ed_tx_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/enter_num_txt_color"
+                android:hint="@string/_0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:nextFocusForward="@id/ed_tx_3"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/enter_num_txt_color"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/ed_tx_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/enter_num_txt_color"
+                android:hint="@string/_0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:nextFocusForward="@id/ed_tx_4"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/enter_num_txt_color"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/ed_tx_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/enter_num_txt_color"
+                android:hint="@string/_0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:nextFocusForward="@id/ed_tx_5"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/enter_num_txt_color"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/ed_tx_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/enter_num_txt_color"
+                android:layout_weight="1"
+                android:hint="@string/_0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:nextFocusForward="@id/ed_tx_6"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/enter_num_txt_color"
+                android:textSize="24sp" />
+            <EditText
+                android:id="@+id/ed_tx_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/enter_num_txt_color"
+                android:hint="@string/_0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/enter_num_txt_color"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/counter_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="22dp"
+            android:text="@string/_01_00"
+            android:textColor="@color/indicatorColor"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/verify_otp_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/sec"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/verify_otp_btn"
+            app:layout_constraintStart_toEndOf="@+id/counter_tv"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+            app:layout_constraintVertical_bias="0.114" />
+
+        <Button
+            android:id="@+id/verify_otp_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="404dp"
+            android:layout_marginBottom="221dp"
+            android:background="@drawable/btn_gradient"
+            android:text="@string/verify"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

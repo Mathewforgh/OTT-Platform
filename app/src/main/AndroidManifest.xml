@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.GlobalCinemaRelease.sdc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.HIDE_OVERLAY_WINDOWS" />
+    <uses-permission android:name="android.permission.HIDE_OVERLAY_WINDOWS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID"
+        tools:node="remove" />
+
+    <application
+        android:name=".msg.MyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/sdc_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/sdc_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SDC"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".RateMovie"
+            android:exported="false" />
+        <activity
+            android:name=".SuggestedMovieForYou"
+            android:exported="false" />
+        <activity
+            android:name=".SeeAllMovies"
+            android:exported="false" />
+        <activity
+            android:name=".MoviePlayer"
+            android:configChanges="keyboard|orientation|screenSize|screenLayout"
+            android:exported="false"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".ThemePage"
+            android:exported="false" />
+        <activity
+            android:name=".HelpAndSupport"
+            android:exported="false" />
+        <activity
+            android:name="com.GlobalCinemaRelease.sdc.EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsPage"
+            android:exported="false" />
+        <activity
+            android:name=".ProceedToPayment"
+            android:exported="false" />
+        <activity
+            android:name=".MovieDescription"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="globalcinemarelease.page.link"
+                    android:scheme="http" />
+                <data
+                    android:host="globalcinemarelease.page.link"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".LanguageSelectionPage"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpPage"
+            android:exported="false" />
+        <activity
+            android:name=".OtpVerificationPage"
+            android:exported="false" />
+        <activity
+            android:name=".SignInPage"
+            android:exported="false" />
+        <activity
+            android:name=".LoginSignPage"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- face Book start-->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            tools:ignore="RedundantLabel" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@string/fb_login_protocol_scheme"
+                    tools:ignore="ManifestResource" />
+            </intent-filter>
+        </activity>
+        <!-- faceBook end-->
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_HIRzt8W1mofBI8" />
+        <meta-data
+            android:name="com.google.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <receiver
+            android:name=".msg.ConnectionReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE"
+                    tools:ignore="BatteryLife" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+    </application>
+
+</manifest>

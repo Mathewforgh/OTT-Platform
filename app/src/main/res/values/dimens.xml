@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="chipsp">10sp</dimen>
+    <dimen name="switch_padding">0dp</dimen>
+    <dimen name="switch_radius">34dp</dimen>
+    <dimen name="switch_size">20dp</dimen>
+    <dimen name="switch_thumb_LR">2dp</dimen>
+    <dimen name="switch_thumb_TB">4dp</dimen>
+</resources>

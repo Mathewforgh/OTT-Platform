@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpAndSupport"
+    android:background="@color/ScreenBgColor">
+
+    <LinearLayout
+        android:id="@+id/helpSupport_backLayout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/helpSupport_back_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_back_arrow_icon" />
+
+        <TextView
+            android:id="@+id/orCallUsNumber_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/help_and_support"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/help_and_support_ic_bg"
+        android:padding="20dp"
+        android:src="@drawable/ic_help_and_support"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helpSupport_backLayout_btn" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="@string/get_24_7_support_with_sdc_cinemas"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:lineSpacingExtra="4dp"
+        android:text="@string/description"
+        android:textAlignment="center"
+        android:textColor="@color/white80"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView21"
+        app:layout_constraintStart_toStartOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <Button
+        android:id="@+id/mailUs_btn"
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_gradient"
+        android:text="@string/mail_us"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView22"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/or_give_us_a_call_on"
+        android:textColor="@color/enter_num_txt_color"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/mailUs_btn"
+        app:layout_constraintStart_toStartOf="@+id/mailUs_btn"
+        app:layout_constraintTop_toBottomOf="@+id/mailUs_btn" />
+
+    <TextView
+        android:id="@+id/HpSupMobNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_91_8846_7463_76"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:layout_marginTop="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView23"
+        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bot_nva_home"
+        android:icon="@drawable/ic_home_unselected"
+        android:title="@string/bot_nav_home" />
+    <item
+        android:id="@+id/bot_nva_search"
+        android:icon="@drawable/ic_search_unselected"
+        android:title="@string/bot_nav_search"
+        />
+    <item
+        android:id="@+id/bot_nva_watchList"
+        android:icon="@drawable/ic_watchlist_unselected"
+        android:title="@string/bot_nav_watchList"
+        />
+    <item
+        android:id="@+id/bot_nva_profile"
+        android:icon="@drawable/ic_profile_unselected"
+        android:title="@string/bot_nav_profile"
+        />
+</menu>

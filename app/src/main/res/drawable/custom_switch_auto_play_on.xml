@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="@dimen/switch_padding" android:bottom="@dimen/switch_padding"
+        android:start="@dimen/switch_padding" android:end="@dimen/switch_padding"
+        android:gravity="center_vertical|fill_horizontal">
+        <shape>
+            <gradient
+                android:endColor="#5A2685"
+                android:startColor="#EF0090"
+                android:type="linear"
+                android:angle="360"/>
+            <corners android:radius="@dimen/switch_radius"/>
+            <size android:height="@dimen/switch_size"/>
+            <padding android:bottom="@dimen/switch_thumb_TB" android:top="@dimen/switch_thumb_TB" android:left="@dimen/switch_thumb_LR"
+                android:right="@dimen/switch_thumb_LR"/>
+        </shape>
+    </item>
+</layer-list>

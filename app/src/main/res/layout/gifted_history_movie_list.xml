@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/black"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/gifted_history_movieList_img"
+            android:layout_width="130dp"
+            android:layout_height="171dp"
+            android:src="@drawable/beast"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/gifted_history_movie_title"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginStart="144dp"
+            android:text="@string/rrr"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.105" />
+
+        <TextView
+            android:id="@+id/gf_movie_description_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/tamil_drama_02_30_hrs"
+            android:textColor="@color/enter_num_txt_color"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/gifted_history_movie_title"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/gifted_history_movie_title"
+            app:layout_constraintTop_toBottomOf="@+id/gifted_history_movie_title" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="@string/payment"
+            android:textColor="@color/enter_num_txt_color"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/gf_movie_description_tv"
+            app:layout_constraintTop_toBottomOf="@+id/gf_movie_description_tv" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="13dp"
+            android:text="@string/purchased_date"
+            android:textColor="@color/enter_num_txt_color"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/gifted_history_movie_title"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/gf_movie_description_tv" />
+
+        <TextView
+            android:id="@+id/gf_movie_cost_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_199_1day"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView13"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/gf_movie_purchase_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_25_apr_2022"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView14"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/redeemed_by"
+            android:textColor="@color/enter_num_txt_color"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/gf_movie_cost_payment"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/gf_movie_cost_payment"
+            app:layout_constraintTop_toBottomOf="@+id/gf_movie_cost_payment" />
+
+        <TextView
+            android:id="@+id/gf_redeemed_by"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="2"
+            android:scrollHorizontally="true"
+            android:text="@string/dot"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/gf_id"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView30"
+            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/gift_id"
+            android:textColor="@color/enter_num_txt_color"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/gf_movie_purchase_date"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/gf_movie_purchase_date"
+            app:layout_constraintTop_toBottomOf="@+id/gf_movie_purchase_date" />
+
+        <TextView
+            android:id="@+id/gf_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SDCGID123"
+            android:textColor="@color/white"
+            android:textIsSelectable="true"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView31"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView31"
+            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
