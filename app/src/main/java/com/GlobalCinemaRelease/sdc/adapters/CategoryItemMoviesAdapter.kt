@@ -12,7 +12,7 @@ import com.GlobalCinemaRelease.sdc.obj.Store
 import com.GlobalCinemaRelease.sdc.response.DataXX
 
 
-class MoviesAdapter(private val moviesImg: List<DataXX?>): RecyclerView.Adapter<MoviesAdapter.ViewHolder>() {
+class CategoryItemMoviesAdapter(private val moviesImg: List<DataXX?>): RecyclerView.Adapter<CategoryItemMoviesAdapter.ViewHolder>() {
     private lateinit var ids: HomePageMoviesLayoutsBinding
 
     inner class ViewHolder(ids: HomePageMoviesLayoutsBinding): RecyclerView.ViewHolder(ids.root){
@@ -24,16 +24,15 @@ class MoviesAdapter(private val moviesImg: List<DataXX?>): RecyclerView.Adapter<
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MoviesAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryItemMoviesAdapter.ViewHolder {
         ids = HomePageMoviesLayoutsBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(ids)
     }
 
-    override fun onBindViewHolder(holder: MoviesAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: CategoryItemMoviesAdapter.ViewHolder, position: Int) {
         holder.bind(moviesImg[position]!!)
 
         holder.itemView.setOnDebounceListener {
-            holder.itemView.startAnimation(Store.zoomOut(holder.itemView.context))
             Store.movieToken = moviesImg[position]?.movieToken.toString()
             Store.movieTokenFrom = "Home"
             holder.itemView.context.startActivity(Intent(holder.itemView.context, MovieDescription::class.java)

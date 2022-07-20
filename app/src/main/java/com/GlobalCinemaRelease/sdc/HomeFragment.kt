@@ -18,7 +18,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager2.widget.ViewPager2
 import com.GlobalCinemaRelease.sdc.adapters.BannerViewPagerAdapter
 import com.GlobalCinemaRelease.sdc.adapters.LanguageSlideAdapterHP
-import com.GlobalCinemaRelease.sdc.adapters.MoviesAdapter
+import com.GlobalCinemaRelease.sdc.adapters.CategoryItemMoviesAdapter
+import com.GlobalCinemaRelease.sdc.adapters.MainRecyclerViewAdapter
 import com.GlobalCinemaRelease.sdc.dataClass.LanguageSlideData
 import com.GlobalCinemaRelease.sdc.databinding.FragmentHomeBinding
 import com.GlobalCinemaRelease.sdc.interfaces.ResponseApi
@@ -26,6 +27,7 @@ import com.GlobalCinemaRelease.sdc.msg.ZoomOutPageTransformer
 import com.GlobalCinemaRelease.sdc.msg.listener.setOnDebounceListener
 import com.GlobalCinemaRelease.sdc.obj.Store
 import com.GlobalCinemaRelease.sdc.response.AddToWatchListDC
+import com.GlobalCinemaRelease.sdc.response.DataX
 import com.GlobalCinemaRelease.sdc.response.HomePageData
 import com.google.android.material.snackbar.Snackbar
 import com.google.gson.JsonObject
@@ -131,85 +133,14 @@ class HomeFragment : Fragment() {
                                         changeNames()
                                     }
                                 })
-
-
-                                homePageNewReleaseTv.text =
-                                    response.body()?.data!![1].title!!
-                                homePageNewReleaseRecyclerView.layoutManager =
-                                    LinearLayoutManager(activity,
-                                        LinearLayoutManager.HORIZONTAL,
-                                        false)
-                                homePageNewReleaseRecyclerView.adapter =
-                                    MoviesAdapter(response.body()?.data!![1].data!!)
-
-                                //new thriller movies recycler view
-                                homePageThrillerTv.text = response.body()?.data!![2].title
-                                homePageThrillerRecyclerView.layoutManager =
-                                    LinearLayoutManager(activity,
-                                        LinearLayoutManager.HORIZONTAL,
-                                        false)
-                                homePageThrillerRecyclerView.adapter =
-                                    MoviesAdapter(response.body()?.data!![2].data!!)
-
-                                //comedy movies
-                                homePageComedyTv.text = response.body()?.data!![4].title
-                                homePageComedyMoviesRecyclerView.layoutManager =
-                                    LinearLayoutManager(activity,
-                                        LinearLayoutManager.HORIZONTAL,
-                                        false)
-                                homePageComedyMoviesRecyclerView.adapter =
-                                    MoviesAdapter(response.body()?.data!![4].data!!)
-
-                                //new action movies recycler view
-                                homePageActionMoviesTv.text = response.body()?.data!![5].title
-                                homePageActionMoviesRecyclerView.layoutManager =
-                                    LinearLayoutManager(activity,
-                                        LinearLayoutManager.HORIZONTAL,
-                                        false)
-                                homePageActionMoviesRecyclerView.adapter =
-                                    MoviesAdapter(response.body()?.data!![5].data!!)
-
-                                selectedLanguageRecyclerView.layoutManager =
-                                    LinearLayoutManager(activity,
-                                        LinearLayoutManager.HORIZONTAL,
-                                        false)
-                                selectedLanguageRecyclerView.adapter =
-                                    LanguageSlideAdapterHP(response.body()?.data!![3].data!!,
-                                        languageList)
-
-                                /*see all btn functions below ----------------------------------------------------------------------------*/
-                                homePageSeeAllBtn.setOnDebounceListener {
-                                    Store.searchToken = response.body()?.data!![1].token.toString()
-                                    Store.type = response.body()?.data!![1].searchTitle.toString()
-                                    Store.resTitle = response.body()?.data!![1].title.toString()
-                                    startActivity(
-                                        Intent(this@HomeFragment.activity,
-                                            SeeAllMovies::class.java)
-                                    )
-                                }
-
-                                homePageSeeAllBtn2.setOnDebounceListener {
-                                    Store.searchToken = response.body()?.data!![2].token.toString()
-                                    Store.type = response.body()?.data!![2].searchTitle.toString()
-                                    Store.resTitle = response.body()?.data!![2].title.toString()
-                                    startActivity(Intent(this@HomeFragment.activity,
-                                        SeeAllMovies::class.java))
-                                }
-
-                                homePageSeeAllBtn3.setOnDebounceListener {
-                                    Store.searchToken = response.body()?.data!![5].token.toString()
-                                    Store.type = response.body()?.data!![5].searchTitle.toString()
-                                    Store.resTitle = response.body()?.data!![5].title.toString()
-                                    startActivity(Intent(this@HomeFragment.activity,
-                                        SeeAllMovies::class.java))
-                                }
-                                homePageSeeAllBtn4.setOnDebounceListener {
-                                    Store.searchToken = response.body()?.data!![4].token.toString()
-                                    Store.type = response.body()?.data!![4].searchTitle.toString()
-                                    Store.resTitle = response.body()?.data!![4].title.toString()
-                                    startActivity(Intent(this@HomeFragment.activity,
-                                        SeeAllMovies::class.java))
-                                }
+  // Home Page Main Recycler View Adapter set up Here...
+                                MainRecyclerView.layoutManager =
+                                    LinearLayoutManager(this@HomeFragment.activity, LinearLayoutManager.VERTICAL, false)
+                                MainRecyclerView.adapter =
+                                    this@HomeFragment.activity?.let {
+                                        MainRecyclerViewAdapter(it,
+                                            response.body()?.data as MutableList<DataX>?)
+                                    }
                             }
                         }
                     }
