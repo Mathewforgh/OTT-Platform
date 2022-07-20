@@ -47,6 +47,7 @@ class RateMovie : AppCompatActivity(), ConnectionReceiver.ConnectionReceiverList
         loader.create()
 
         if (Store.rating.isNotEmpty() && Store.isRated){
+            toast("You Have Already Rate This Movie")
             ids.ratingBar.progress = Store.rating.toInt()
             ids.rateSubmitBtn.visibility = View.GONE
         }

@@ -29,20 +29,6 @@ class SplashScreenActivity : AppCompatActivity() {
 
         sharedPreferences = getSharedPreferences("myPref", Context.MODE_PRIVATE)
 
-//        try {
-//            val info = packageManager.getPackageInfo(
-//                packageName,
-//                PackageManager.GET_SIGNATURES)
-//            for (signature in info.signatures) {
-//                val md: MessageDigest = MessageDigest.getInstance("SHA")
-//                md.update(signature.toByteArray())
-//                Log.d("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT))
-//                val keyHash=Base64.encodeToString(md.digest(), Base64.DEFAULT).toString()
-//                println(keyHash)
-//            }
-//        } catch (e: PackageManager.NameNotFoundException) {
-//        } catch (e: NoSuchAlgorithmException) {
-//        }
         Thread {
             var ct = 0
             while (ct <= 100) {

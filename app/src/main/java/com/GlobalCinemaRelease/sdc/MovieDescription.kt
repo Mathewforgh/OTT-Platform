@@ -47,7 +47,6 @@ class MovieDescription : AppCompatActivity(), ConnectionReceiver.ConnectionRecei
     private lateinit var sharedPreferences: SharedPreferences
     private lateinit var cost: String
     private var isRented: Boolean = false
-    private var fullMovieLink: String = ""
     lateinit var movieToken: String
     private var userToken: String = ""
     lateinit var loader: Dialog
@@ -112,6 +111,7 @@ class MovieDescription : AppCompatActivity(), ConnectionReceiver.ConnectionRecei
                 Log.i("dynamic link", "fails --$it")
             }
 
+
         setMoviesDescription(userToken, Store.movieTokenSet)
         btnClickListeners()
 
@@ -133,6 +133,7 @@ class MovieDescription : AppCompatActivity(), ConnectionReceiver.ConnectionRecei
         successPaymentDialog = BottomSheetDialog(this, R.style.ThemeOverlay_App_BottomSheetDialog)
 
         if (Store.payState == "true") {
+            setMoviesDescription(userToken, Store.movieTokenSet)
             successPaymentDialog.setContentView(done)
             successPaymentDialog.show()
             Store.payState = "false"
@@ -144,7 +145,7 @@ class MovieDescription : AppCompatActivity(), ConnectionReceiver.ConnectionRecei
             successPaymentDialog.cancel()
             isRented = true
             Store.giftCoupon = ""
-            Store.movieLink = fullMovieLink
+            Log.i("test", "done.PaySuc_watchNow_btn--Store.movieLink ${Store.movieLink} ")
             startActivity(
                 Intent(this@MovieDescription, MoviePlayer::class.java).putExtra("state", "1"))
         }
@@ -377,21 +378,24 @@ class MovieDescription : AppCompatActivity(), ConnectionReceiver.ConnectionRecei
                                 ids.descriptionPagePlayTrailerBtn.setOnDebounceListener {
                                     Store.movieLink =
                                         response.body()?.movieDetails!!.trailer_link.toString()
+                                    Log.i("test", "descriptionPagePlayTrailerBtn--Store.movieLink ${Store.movieLink} ")
                                     startActivity(Intent(this@MovieDescription,
                                         MoviePlayer::class.java))
                                 }
                                 isRented = response.body()?.movieDetails!!.isRented!!
                                 if (isRented) {
-                                    fullMovieLink =
-                                        response.body()?.movieDetails!!.movie_link.toString()
+//                                    fullMovieLink =
+//                                        response.body()?.movieDetails!!.movie_link.toString()
                                     ids.rentNowTv.text = getString(R.string.playNow)
                                     ids.constraintLayout2.visibility = View.GONE
                                     ids.watchPartyBtn.visibility = View.VISIBLE
-                                    Store.movieLink = fullMovieLink
+                                    Store.movieLink = response.body()?.movieDetails!!.movie_link.toString()
+                                    Log.i("test", "while isRented true--Store.movieLink ${Store.movieLink} ")
                                 }
                                 if (Store.payState == "true" || Store.code == "redeemed") {
                                     Store.movieLink =
                                         response.body()?.movieDetails?.movie_link.toString()
+                                    Log.i("test", "Store.payState == \"true\" || Store.code == \"redeemed\"--Store.movieLink ${Store.movieLink} ")
                                 }
                                 ids.descripRentNowBtn.setOnDebounceListener {
                                     isRented = response.body()?.movieDetails!!.isRented!!
@@ -411,6 +415,7 @@ class MovieDescription : AppCompatActivity(), ConnectionReceiver.ConnectionRecei
                                         Store.movieLink = ""
                                         Store.movieLink =
                                             response.body()?.movieDetails?.movie_link.toString()
+                                        Log.i("test", "descripRentNowBtn isRent true--Store.movieLink ${Store.movieLink} ")
                                         Store.rentToken = response.body()?.movieDetails?.rentToken.toString()
                                         notifyMoviePlayed()
                                         startActivity(Intent(this@MovieDescription,
@@ -483,7 +488,7 @@ class MovieDescription : AppCompatActivity(), ConnectionReceiver.ConnectionRecei
 
     override fun onResume() {
         super.onResume()
-        setMoviesDescription(userToken, Store.movieTokenSet)
+//        setMoviesDescription(userToken, Store.movieTokenSet)
         /* Coupon code redeemed Bottom sheet set up*/
         val botSheet: View = layoutInflater.inflate(R.layout.redeem_coupon_layout, null)
         val dialog2 = BottomSheetDialog(this, R.style.ThemeOverlay_App_BottomSheetDialog)
@@ -497,7 +502,6 @@ class MovieDescription : AppCompatActivity(), ConnectionReceiver.ConnectionRecei
                 dialog2.dismiss()
             }
             botSheet.watchNowBtn.setOnClickListener {
-                Store.movieLink = fullMovieLink
                 startActivity(Intent(this@MovieDescription, this@MovieDescription::class.java)
                     .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
                 notifyMoviePlayed()
