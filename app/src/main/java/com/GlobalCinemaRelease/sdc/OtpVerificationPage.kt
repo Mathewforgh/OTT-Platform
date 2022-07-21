@@ -54,16 +54,15 @@ class OtpVerificationPage : AppCompatActivity() {
         val userName = Store.userName
         val countryCode = Store.countryCode
         phNumber = Store.phNumber
-        ids.enteredNumTv.text = "$countryCode $phNumber"
 
-        phNumber = if (android.util.Patterns.EMAIL_ADDRESS.matcher(phNumber).matches()){
-            Store.phNumber
-        }else{
-            phNumber
+        if (android.util.Patterns.EMAIL_ADDRESS.matcher(phNumber).matches()) {
+            ids.textView8.text = "We have sent you an OTP to your registered\nMail Id."
+            ids.enteredNumTv.text = phNumber
         }
-
-        if (android.util.Patterns.EMAIL_ADDRESS.matcher(phNumber).matches()) ids.textView8.text = "We have sent you an OTP to your registered\nMail Id."
-        else ids.textView8.text = "We have sent you an OTP to your registered\nmobile number."
+        else {
+            ids.textView8.text = "We have sent you an OTP to your registered\nmobile number."
+            ids.enteredNumTv.text = "$countryCode $phNumber"
+        }
 
 
         ids.changeTv.setOnDebounceListener {

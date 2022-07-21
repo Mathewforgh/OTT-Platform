@@ -43,8 +43,8 @@ class SignInPage : AppCompatActivity() {
     private lateinit var sharedPref: SharedPreferences
     lateinit var loader: Dialog
     private val callbackManager = CallbackManager.Factory.create()
-
     private lateinit var enteredPhNumber: String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         FacebookSdk.sdkInitialize(applicationContext);
