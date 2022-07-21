@@ -34,7 +34,7 @@ class SettingsPage : AppCompatActivity() {
 
         userToken = sharedPreferences.getString("userToken","").toString()
         val name = sharedPreferences.getString("userName","")
-        val phNumber = "+${sharedPreferences.getString("countryCode","")}" +
+        val phNumber = "${sharedPreferences.getString("countryCode","")}" +
                     " - " + "${sharedPreferences.getString("phNumber","")}"
 
         if (!name.isNullOrEmpty() && phNumber != ""){

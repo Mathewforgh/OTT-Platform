@@ -54,7 +54,7 @@ class OtpVerificationPage : AppCompatActivity() {
         val userName = Store.userName
         val countryCode = Store.countryCode
         phNumber = Store.phNumber
-        ids.enteredNumTv.text = "+$countryCode $phNumber"
+        ids.enteredNumTv.text = "$countryCode $phNumber"
 
         phNumber = if (android.util.Patterns.EMAIL_ADDRESS.matcher(phNumber).matches()){
             Store.phNumber

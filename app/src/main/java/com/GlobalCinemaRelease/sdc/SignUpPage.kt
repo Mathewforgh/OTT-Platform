@@ -40,7 +40,7 @@ class SignUpPage : AppCompatActivity() {
             val userName = ids.enterNameExTx.text.toString()
             val userEmail = ids.enterEmailEdTx.text.toString()
             val phNumber = ids.mobNumEdTx.text.toString()
-            val countryCode = ids.countryCodePic.selectedCountryCode
+            val countryCode = ids.countryCodePic.selectedCountryCodeWithPlus
 
             val validEmail = android.util.Patterns.EMAIL_ADDRESS.matcher(userEmail).matches()
 
