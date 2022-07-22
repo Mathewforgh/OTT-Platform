@@ -23,7 +23,7 @@
             android:layout_weight="1"
             android:text=""
             android:textStyle="bold"
-            android:textColor="@color/white"
+            android:textColor="@color/homePageCategoryTitle"
             android:textSize="14sp" />
 
         <TextView

@@ -4,7 +4,7 @@
     <string name="todo">TODO</string>
     <string name="skip">Skip</string>
     <string name="skip_done">Done</string>
-    <string name="watch_unlimited_movies_series_anywhere_anytime">Watch unlimited movies, series, anywhere, anytime</string>
+    <string name="watch_unlimited_movies_series_anywhere_anytime">Watch unlimited movies, series,\nanywhere, anytime</string>
     <string name="explore_as_guest">EXPLORE AS GUEST</string>
     <string name="sign_in">Sign-In</string>
     <string name="google">Google</string>
@@ -144,4 +144,5 @@
     <string name="invite_info">INVITE INFO</string>
     <string name="no_result">No Result</string>
     <string name="dot">...</string>
+    <string name="no_internet">NO INTERNET</string>
 </resources>

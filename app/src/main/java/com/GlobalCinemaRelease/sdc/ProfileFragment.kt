@@ -1,6 +1,7 @@
 package com.GlobalCinemaRelease.sdc
 
 import android.app.Dialog
+import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.graphics.Color
@@ -11,6 +12,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
+import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.GlobalCinemaRelease.sdc.adapters.GiftedHistoryAdapter
@@ -60,9 +62,9 @@ class ProfileFragment : Fragment() {
         ids!!.profileGiftedHistory.isAllCaps = false
         ids!!.profilePrefLanguage.isAllCaps = false
 
-        ids!!.profilePaymentHistory.setTextColor(resources.getColor(R.color.indicatorColor))
-        ids!!.profileGiftedHistory.setTextColor(resources.getColor(R.color.white))
-        ids!!.profilePrefLanguage.setTextColor(resources.getColor(R.color.white))
+        ids!!.profilePaymentHistory.setTextColor(ContextCompat.getColor(this@ProfileFragment.activity!!,R.color.indicatorColor))
+        ids!!.profileGiftedHistory.setTextColor(ContextCompat.getColor(this@ProfileFragment.activity!!,R.color.movie_descrip_movie_name))
+        ids!!.profilePrefLanguage.setTextColor(ContextCompat.getColor(this@ProfileFragment.activity!!,R.color.movie_descrip_movie_name))
 
         ids!!.profileGiftedHistory.setBackgroundResource(R.drawable.profile_chip_unselected_bg)
         ids!!.profilePrefLanguage.setBackgroundResource(R.drawable.profile_chip_unselected_bg)
@@ -78,9 +80,9 @@ class ProfileFragment : Fragment() {
         ids!!.profilePrefLanguage.isAllCaps = false
         ids!!.profilePaymentHistory.isAllCaps = false
 
-        ids!!.profileGiftedHistory.setTextColor(resources.getColor(R.color.indicatorColor))
-        ids!!.profilePrefLanguage.setTextColor(resources.getColor(R.color.white))
-        ids!!.profilePaymentHistory.setTextColor(resources.getColor(R.color.white))
+        ids!!.profileGiftedHistory.setTextColor(ContextCompat.getColor(this@ProfileFragment.activity!!,R.color.indicatorColor))
+        ids!!.profilePrefLanguage.setTextColor(ContextCompat.getColor(this@ProfileFragment.activity!!,R.color.movie_descrip_movie_name))
+        ids!!.profilePaymentHistory.setTextColor(ContextCompat.getColor(this@ProfileFragment.activity!!,R.color.movie_descrip_movie_name))
 
         ids!!.profilePaymentHistory.setBackgroundResource(R.drawable.profile_chip_unselected_bg)
         ids!!.profilePrefLanguage.setBackgroundResource(R.drawable.profile_chip_unselected_bg)
@@ -96,9 +98,9 @@ class ProfileFragment : Fragment() {
         ids!!.profileGiftedHistory.isAllCaps = false
         ids!!.profilePaymentHistory.isAllCaps = false
 
-        ids!!.profilePrefLanguage.setTextColor(resources.getColor(R.color.indicatorColor))
-        ids!!.profilePaymentHistory.setTextColor(resources.getColor(R.color.white))
-        ids!!.profileGiftedHistory.setTextColor(resources.getColor(R.color.white))
+        ids!!.profilePrefLanguage.setTextColor(ContextCompat.getColor(this@ProfileFragment.activity!!,R.color.indicatorColor))
+        ids!!.profilePaymentHistory.setTextColor(ContextCompat.getColor(this@ProfileFragment.activity!!,R.color.movie_descrip_movie_name))
+        ids!!.profileGiftedHistory.setTextColor(ContextCompat.getColor(this@ProfileFragment.activity!!,R.color.movie_descrip_movie_name))
 
         ids!!.profilePaymentHistory.setBackgroundResource(R.drawable.profile_chip_unselected_bg)
         ids!!.profileGiftedHistory.setBackgroundResource(R.drawable.profile_chip_unselected_bg)

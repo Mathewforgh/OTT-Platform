@@ -48,7 +48,7 @@
         app:sideMargins="10dp"
         app:backgroundColor="@color/ScreenBgColor"
         app:itemPadding="10dp"
-        app:iconTint="@color/enter_num_txt_color"
+        app:iconTint="@color/navigation_icon_color"
         app:iconTintActive="@color/indicatorColor"
         app:menu="@menu/bottom_nav"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

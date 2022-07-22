@@ -20,7 +20,7 @@
   <path
       android:pathData="M41.6,131.2m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0"
       android:strokeWidth="1"
-      android:fillColor="#FFFFFF"
+      android:fillColor="@color/movie_descrip_movie_name"
       android:fillType="evenOdd"
       android:strokeColor="#00000000"/>
   <path
@@ -56,7 +56,7 @@
   <path
       android:pathData="M118.8,129.2h35.2v3.2h-35.2z"
       android:strokeWidth="1"
-      android:fillColor="#FFFFFF"
+      android:fillColor="@color/movie_descrip_movie_name"
       android:fillType="evenOdd"
       android:strokeColor="#00000000"/>
   <path
@@ -68,7 +68,7 @@
   <path
       android:pathData="M95.16,93.26C90.74,93.26 87,89.52 87,85.1C87,80.68 90.74,76.94 95.16,76.94C99.58,76.94 103.32,80.68 103.32,85.1C103.32,89.52 99.58,93.26 95.16,93.26Z"
       android:strokeWidth="1"
-      android:fillColor="#FFFFFF"
+      android:fillColor="@color/movie_descrip_movie_name"
       android:fillType="nonZero"
       android:strokeColor="#00000000"/>
   <path
@@ -86,7 +86,7 @@
   <path
       android:pathData="M115.77,7C116.68,4.72 121.05,5.53 124,6.8C126.95,8.06 128.92,9.77 128.25,12.12C127.8,13.69 117,37.44 95.85,83.36C108.53,33.98 115.17,8.52 115.77,7Z"
       android:strokeWidth="1"
-      android:fillColor="#FFFFFF"
+      android:fillColor="@color/movie_descrip_movie_name"
       android:fillType="evenOdd"
       android:strokeColor="#00000000"/>
 </vector>

@@ -21,7 +21,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo"
+        app:tint="@color/movie_descrip_movie_name" />
 
     <com.google.android.exoplayer2.ui.PlayerView
         android:id="@+id/video_view"
@@ -115,7 +117,7 @@
                 android:scrollHorizontally="true"
                 android:singleLine="true"
                 android:text="@string/todo"
-                android:textColor="@color/white"
+                android:textColor="@color/movie_descrip_movie_name"
                 android:textSize="32sp"
                 android:textStyle="bold" />
 
@@ -124,7 +126,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/todo"
-                android:textColor="@color/enter_num_txt_color"
+                android:textColor="@color/setting_page_titles"
                 android:textSize="12sp"
                 android:textStyle="normal" />
         </LinearLayout>

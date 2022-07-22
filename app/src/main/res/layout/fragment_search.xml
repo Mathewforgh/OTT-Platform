@@ -20,7 +20,9 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:outlineAmbientShadowColor="@color/indicatorColor"
+        tools:targetApi="p">
 
         <EditText
             android:id="@+id/searchEdTxt"
@@ -29,11 +31,13 @@
             android:background="@drawable/search_bg"
             android:drawableEnd="@drawable/ic_search"
             android:hint="@string/search_movies_sdc_originals"
+            android:textColorHint="@color/search_box_hint_color"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
             android:textColor="@color/enter_num_txt_color"
             android:textSize="13sp"
-            android:inputType="text" />
+            android:inputType="text"
+            android:importantForAutofill="no" />
     </LinearLayout>
 
     <LinearLayout
@@ -62,7 +66,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/search_by"
-                android:textColor="@color/white"
+                android:textColor="@color/movie_descrip_movie_name"
                 android:textSize="14sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -84,7 +88,7 @@
                 android:paddingTop="40dp"
                 android:paddingBottom="40dp"
                 android:text="@string/movies"
-                android:textColor="@color/white"
+                android:textColor="@color/movie_descrip_movie_name"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -99,7 +103,7 @@
                 android:paddingTop="40dp"
                 android:paddingBottom="40dp"
                 android:text="@string/sdc_originals"
-                android:textColor="@color/white"
+                android:textColor="@color/movie_descrip_movie_name"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -116,7 +120,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/suggested_movies_for_you"
-                android:textColor="@color/white"
+                android:textColor="@color/movie_descrip_movie_name"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -274,7 +278,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/suggested_movies_for_you"
-                android:textColor="@color/white"
+                android:textColor="@color/movie_descrip_movie_name"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 

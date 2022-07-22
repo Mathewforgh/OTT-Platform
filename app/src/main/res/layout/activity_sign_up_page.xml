@@ -22,7 +22,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:textColor="@color/movie_descrip_movie_name"
             android:textSize="24sp"
             android:text="@string/sign_up"/>
 
@@ -42,7 +42,7 @@
             android:inputType="text"
             android:maxLength="20"
             android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-            android:textColor="@color/white"/>
+            android:textColor="@color/movie_descrip_movie_name"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/enter_num_txt_color"
             android:inputType="textEmailAddress"
-            android:textColor="@color/white"/>
+            android:textColor="@color/movie_descrip_movie_name"/>
     </LinearLayout>
 
     <LinearLayout
@@ -109,17 +109,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                app:ccp_arrowColor="@color/white"
-                app:ccp_contentColor="@color/white"
-                app:ccp_showNameCode="false" >
-
-<!--                <EditText-->
-<!--                    android:layout_width="100dp"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="2dp"-->
-<!--                    android:layout_marginBottom="0dp"-->
-<!--                    android:backgroundTint="@color/enter_num_txt_color"-->
-<!--                    android:enabled="false" />-->
+                app:ccp_arrowColor="@color/movie_descrip_movie_name"
+                app:ccp_contentColor="@color/movie_descrip_movie_name"
+                app:ccp_showNameCode="false"
+                app:ccpDialog_backgroundColor="@color/ScreenBgColor"
+                app:ccpDialog_textColor="@color/movie_descrip_movie_name">
             </com.hbb20.CountryCodePicker>
 
         </RelativeLayout>
@@ -132,7 +126,9 @@
             android:backgroundTint="@color/enter_num_txt_color"
             android:inputType="number"
             android:maxLength="10"
-            android:textColor="@color/white" />
+            android:textColor="@color/movie_descrip_movie_name"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
     </LinearLayout>
 
     <Button
@@ -163,7 +159,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/already_have_a_account"
-            android:textColor="@color/white"
+            android:textColor="@color/movie_descrip_movie_name"
             android:textSize="13sp" />
 
         <TextView

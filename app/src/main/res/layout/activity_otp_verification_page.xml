@@ -23,9 +23,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="631dp"
-
             android:text="@string/otp_verification"
-            android:textColor="@color/white"
+            android:textColor="@color/movie_descrip_movie_name"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/_91_8220901760"
-            android:textColor="@color/white"
+            android:textColor="@color/movie_descrip_movie_name"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -66,7 +65,7 @@
             android:layout_marginEnd="91dp"
             android:layout_marginBottom="550dp"
             android:text="@string/we_have_sent_you_an_otp_to_your_registered_mobile_number"
-            android:textColor="@color/enter_num_txt_color"
+            android:textColor="@color/setting_page_titles"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -97,7 +96,7 @@
                 android:nextFocusForward="@id/ed_tx_2"
                 android:focusable="true"
                 android:textAlignment="center"
-                android:textColor="@color/white"
+                android:textColor="@color/movie_descrip_movie_name"
                 android:textColorHint="@color/enter_num_txt_color"
                 android:textSize="24sp" />
 
@@ -112,7 +111,7 @@
                 android:maxLength="1"
                 android:nextFocusForward="@id/ed_tx_3"
                 android:textAlignment="center"
-                android:textColor="@color/white"
+                android:textColor="@color/movie_descrip_movie_name"
                 android:textColorHint="@color/enter_num_txt_color"
                 android:textSize="24sp" />
 
@@ -127,7 +126,7 @@
                 android:maxLength="1"
                 android:nextFocusForward="@id/ed_tx_4"
                 android:textAlignment="center"
-                android:textColor="@color/white"
+                android:textColor="@color/movie_descrip_movie_name"
                 android:textColorHint="@color/enter_num_txt_color"
                 android:textSize="24sp" />
 
@@ -142,7 +141,7 @@
                 android:maxLength="1"
                 android:nextFocusForward="@id/ed_tx_5"
                 android:textAlignment="center"
-                android:textColor="@color/white"
+                android:textColor="@color/movie_descrip_movie_name"
                 android:textColorHint="@color/enter_num_txt_color"
                 android:textSize="24sp" />
 
@@ -157,7 +156,7 @@
                 android:maxLength="1"
                 android:nextFocusForward="@id/ed_tx_6"
                 android:textAlignment="center"
-                android:textColor="@color/white"
+                android:textColor="@color/movie_descrip_movie_name"
                 android:textColorHint="@color/enter_num_txt_color"
                 android:textSize="24sp" />
             <EditText
@@ -170,7 +169,7 @@
                 android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
-                android:textColor="@color/white"
+                android:textColor="@color/movie_descrip_movie_name"
                 android:textColorHint="@color/enter_num_txt_color"
                 android:textSize="24sp" />
 
@@ -196,7 +195,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/sec"
-            android:textColor="@color/white"
+            android:textColor="@color/movie_descrip_movie_name"
             android:textSize="12sp"
             app:layout_constraintBottom_toTopOf="@+id/verify_otp_btn"
             app:layout_constraintStart_toEndOf="@+id/counter_tv"

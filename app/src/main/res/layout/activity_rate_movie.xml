@@ -59,7 +59,7 @@
                 android:scrollHorizontally="true"
                 android:singleLine="true"
                 android:text="@string/todo"
-                android:textColor="@color/white"
+                android:textColor="@color/movie_descrip_movie_name"
                 android:textSize="32sp"
                 android:textStyle="bold" />
 
@@ -69,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:text="@string/todo"
-                android:textColor="@color/enter_num_txt_color"
+                android:textColor="@color/movie_descrip_movie_name"
                 android:textSize="12sp" />
         </LinearLayout>
 
@@ -92,7 +92,7 @@
                 android:layout_marginTop="30dp"
                 android:text="@string/rate_your_movie_experience"
                 android:textAlignment="center"
-                android:textColor="@color/white"
+                android:textColor="@color/movie_descrip_movie_name"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 

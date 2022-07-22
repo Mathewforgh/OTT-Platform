@@ -10,7 +10,7 @@
     <string name="title6">Watch your favourite movie releases\ncomfortably at your place</string>
     <string name="skip">Skip</string>
     <string name="skip_done">Done</string>
-    <string name="watch_unlimited_movies_series_anywhere_anytime">Watch unlimited movies, series,\n anywhere, anytime</string>
+    <string name="watch_unlimited_movies_series_anywhere_anytime">Watch unlimited movies, series,\nanywhere, anytime</string>
     <string name="login_signup_btn">LOGIN / SIGNUP</string>
     <string name="explore_as_guest">EXPLORE AS GUEST</string>
     <string name="sign_in">Sign-In</string>
@@ -40,7 +40,7 @@
     <string name="btn2_continue">CONTINUE</string>
     <string name="language">Language</string>
     <string name="select_your_preferred_languages">Select your preferred languages</string>
-    <string name="languageContinue">CONTINUE</string>
+    <string name="language_continue">CONTINUE</string>
     <string name="english">English</string>
     <string name="bot_nav_home">Home</string>
     <string name="bot_nav_search">Search</string>
@@ -250,4 +250,5 @@
     <string name="invite_info">INVITE INFO</string>
     <string name="no_result">No Result</string>
     <string name="dot">...</string>
+    <string name="no_internet">NO INTERNET</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.GlobalCinemaRelease.sdc
 
+import android.accessibilityservice.AccessibilityService
 import android.app.Dialog
 import android.content.Context
 import android.content.Intent
@@ -8,6 +9,7 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.print.PrintAttributes
 import android.util.Log
+import android.view.KeyEvent
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -18,10 +20,7 @@ import com.GlobalCinemaRelease.sdc.interfaces.ResponseApi
 import com.GlobalCinemaRelease.sdc.msg.listener.setOnDebounceListener
 import com.GlobalCinemaRelease.sdc.msg.toast
 import com.GlobalCinemaRelease.sdc.obj.Store
-import com.GlobalCinemaRelease.sdc.response.SetLogInUserDetailsDC
-import com.GlobalCinemaRelease.sdc.response.SignUpSaveData
-import com.GlobalCinemaRelease.sdc.response.SocialLogin
-import com.GlobalCinemaRelease.sdc.response.VerifyOtp
+import com.GlobalCinemaRelease.sdc.response.*
 import com.google.gson.JsonObject
 import org.json.JSONException
 import retrofit2.Call
@@ -283,8 +282,9 @@ class OtpVerificationPage : AppCompatActivity() {
             override fun onFinish() {
                 ids.counterTv.text = "Resend OTP"
                 ids.textView11.visibility = View.GONE
-                ids.counterTv.setOnDebounceListener {
+                ids.counterTv.setOnClickListener {
                     timers()
+                    reSendOtp()
                 }
             }
 
@@ -299,24 +299,48 @@ class OtpVerificationPage : AppCompatActivity() {
         ids.edTx1.doOnTextChanged { _, _, _, _ ->
             if (ids.edTx1.text.isNotEmpty()) ids.edTx2.requestFocus()
         }
-        ids.edTx2.doOnTextChanged { text, start, before, count ->
+        ids.edTx2.doOnTextChanged { _, _, _, _ ->
             if (ids.edTx2.text.isNotEmpty()) ids.edTx3.requestFocus()
             else ids.edTx1.requestFocus()
         }
-        ids.edTx3.doOnTextChanged { text, start, before, count ->
+        ids.edTx3.doOnTextChanged { _, _, _, _ ->
             if (ids.edTx3.text.isNotEmpty()) ids.edTx4.requestFocus()
             else ids.edTx2.requestFocus()
         }
-        ids.edTx4.doOnTextChanged { text, start, before, count ->
+        ids.edTx4.doOnTextChanged { _, _, _, _ ->
             if (ids.edTx4.text.isNotEmpty()) ids.edTx5.requestFocus()
             else ids.edTx3.requestFocus()
         }
-        ids.edTx5.doOnTextChanged { text, start, before, count ->
+        ids.edTx5.doOnTextChanged { _, _, _, _ ->
             if (ids.edTx5.text.isNotEmpty()) ids.edTx6.requestFocus()
             else ids.edTx4.requestFocus()
         }
-        ids.edTx6.doOnTextChanged { text, start, before, count ->
+        ids.edTx6.doOnTextChanged { _, _, _, _ ->
             if (ids.edTx6.text.isEmpty()) ids.edTx5.requestFocus()
+        }
+    }
+    private fun reSendOtp(){
+        val jsonObject = JsonObject()
+
+        try {
+            jsonObject.addProperty("mobileNumber", phNumber)
+            jsonObject.addProperty("type", "sendotp")
+
+            // api call
+            ResponseApi().signUpSendOtp(jsonObject).enqueue(object : Callback<SendOtp?> {
+                override fun onResponse(call: Call<SendOtp?>, response: Response<SendOtp?>) {
+                    if (response.isSuccessful && response.body()?.code == 201) {
+                        toast("OTP Sent")
+                    }else toast("Connection Failed")
+                }
+
+                override fun onFailure(call: Call<SendOtp?>, t: Throwable) {
+                    toast("${t.message}")
+                    toast("No Internet Connection")
+                }
+            })
+        } catch (e: JSONException) {
+            e.printStackTrace()
         }
     }
 }

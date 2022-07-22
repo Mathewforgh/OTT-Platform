@@ -26,7 +26,9 @@ import com.GlobalCinemaRelease.sdc.databinding.ActivityHomePageBinding
 import com.GlobalCinemaRelease.sdc.msg.*
 import com.GlobalCinemaRelease.sdc.obj.Store
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.android.synthetic.main.activity_theme_page.*
 import me.ibrahimsn.lib.SmoothBottomBar
+import kotlin.system.exitProcess
 
 class HomePage : AppCompatActivity(), ConnectionReceiver.ConnectionReceiverListener {
     private val ids by lazy { ActivityHomePageBinding.inflate(layoutInflater) }
@@ -105,7 +107,7 @@ class HomePage : AppCompatActivity(), ConnectionReceiver.ConnectionReceiverListe
                 setMessage("Do you want to close this application ?")
                 setCancelable(false)
                 setPositiveButton("Okay") { _, _ ->
-                        finishAffinity()
+                    finishAffinity()
                 }
                 setNegativeButton("Cancel") { dialog, _ ->
                     dialog.cancel()

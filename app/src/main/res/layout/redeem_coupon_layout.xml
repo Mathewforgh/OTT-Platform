@@ -13,7 +13,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo" />
     <ImageView
         android:id="@+id/cancelBtn"
         android:layout_width="24dp"
@@ -23,7 +24,9 @@
         app:layout_constraintHorizontal_bias="0.924"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        app:tint="@color/movie_descrip_movie_name"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -34,7 +37,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/textView29"
@@ -43,7 +47,7 @@
         android:layout_marginTop="15dp"
         android:text="@string/voucher_redeemed_successful"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/movie_descrip_movie_name"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imageView9"

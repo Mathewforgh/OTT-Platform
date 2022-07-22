@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/profile"
-                android:textColor="@color/white"
+                android:textColor="@color/movie_descrip_movie_name"
                 android:textSize="24sp" />
 
             <ImageView
@@ -37,7 +37,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/ic_settings" />
+                android:src="@drawable/ic_settings"
+                app:tint="@color/movie_descrip_movie_name" />
 
         </LinearLayout>
 
@@ -91,7 +92,7 @@
                     android:paddingEnd="20dp"
                     android:paddingBottom="10dp"
                     android:text="@string/gifted_history"
-                    android:textColor="@color/white"
+                    android:textColor="@color/movie_descrip_movie_name"
                     android:textSize="@dimen/chipsp" />
 
                 <TextView
@@ -105,7 +106,7 @@
                     android:paddingEnd="20dp"
                     android:paddingBottom="10dp"
                     android:text="@string/preferred_language"
-                    android:textColor="@color/white"
+                    android:textColor="@color/movie_descrip_movie_name"
                     android:textSize="@dimen/chipsp" />
             </LinearLayout>
         </HorizontalScrollView>

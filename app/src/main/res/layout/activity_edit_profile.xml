@@ -25,13 +25,14 @@
             android:layout_marginEnd="5dp"
             android:layout_gravity="center"
             android:background="@color/ScreenBgColor"
-            android:src="@drawable/ic_back_arrow_icon" />
+            android:src="@drawable/ic_back_arrow_icon"
+            app:tint="@color/movie_descrip_movie_name" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/edit_profile"
-            android:textColor="@color/white"
+            android:textColor="@color/movie_descrip_movie_name"
             android:textSize="24sp"
             tools:layout_editor_absoluteX="18dp"
             tools:layout_editor_absoluteY="19dp" />
@@ -55,7 +56,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="@string/enter_your_name"
-            android:textColor="@color/enter_num_txt_color"
+            android:textColor="@color/setting_page_titles"
             android:textSize="14sp" />
 
         <EditText
@@ -64,14 +65,14 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/enter_num_txt_color"
             android:inputType="text"
-            android:textColor="@color/white" />
+            android:textColor="@color/movie_descrip_movie_name" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="@string/enter_your_email_address"
-            android:textColor="@color/enter_num_txt_color"
+            android:textColor="@color/setting_page_titles"
             android:textSize="14sp" />
 
         <EditText
@@ -80,7 +81,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/enter_num_txt_color"
             android:inputType="text"
-            android:textColor="@color/white"
+            android:textColor="@color/movie_descrip_movie_name"
             tools:ignore="TextFields"
             android:enabled="false"/>
     </LinearLayout>
@@ -108,7 +109,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="25dp"
                 android:text="@string/country_code"
-                android:textColor="@color/enter_num_txt_color"
+                android:textColor="@color/setting_page_titles"
                 android:textSize="14sp" />
 
             <TextView
@@ -117,7 +118,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="@string/enter_your_mobile_number"
-                android:textColor="@color/enter_num_txt_color"
+                android:textColor="@color/setting_page_titles"
                 android:textSize="14sp" />
         </LinearLayout>
 
@@ -141,7 +142,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/enter_num_txt_color"
                 android:inputType="number"
-                android:textColor="@color/white"
+                android:textColor="@color/movie_descrip_movie_name"
                 android:enabled="false"/>
         </LinearLayout>
 

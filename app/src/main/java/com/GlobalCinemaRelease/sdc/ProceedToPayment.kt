@@ -87,6 +87,7 @@ class ProceedToPayment : AppCompatActivity(), PaymentResultListener,
         }
         ids.paymentPPayNowBtn.setOnDebounceListener {
             ids.apply {
+                EnterGiftCodeLayout.clearAnimation()
                 EnterGiftCodeLayout.visibility = View.GONE
                 payNowCheckTick.setImageResource(R.drawable.ic_check)
                 giftBtnImgTick.setImageResource(R.drawable.ic_unselect_button)
@@ -95,6 +96,7 @@ class ProceedToPayment : AppCompatActivity(), PaymentResultListener,
         }
         ids.giftVoucherBtn.setOnDebounceListener {
             ids.apply {
+                EnterGiftCodeLayout.startAnimation(Store.slideDown(this@ProceedToPayment))
                 EnterGiftCodeLayout.visibility = View.VISIBLE
                 payNowCheckTick.setImageResource(R.drawable.ic_unselect_button)
                 giftBtnImgTick.setImageResource(R.drawable.ic_check)

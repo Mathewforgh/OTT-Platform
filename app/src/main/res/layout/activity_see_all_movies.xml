@@ -23,14 +23,15 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_back_arrow_icon"/>
+            android:src="@drawable/ic_back_arrow_icon"
+            app:tint="@color/homePageCategoryTitle" />
         <TextView
             android:id="@+id/search_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:textColor="@color/homePageCategoryTitle"
             android:layout_marginStart="20dp"
-            android:text="sdf"
+            android:text=""
             android:textSize="24sp" />
     </LinearLayout>
 

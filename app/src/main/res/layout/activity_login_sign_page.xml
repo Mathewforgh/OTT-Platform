@@ -22,7 +22,8 @@
             android:layout_width="175.56sp"
             android:layout_height="134.32sp"
             android:layout_gravity="center"
-            android:src="@drawable/sdc_logo" />
+            android:src="@drawable/sdc_logo"
+            android:contentDescription="@string/todo" />
 
         <TextView
             android:layout_width="match_parent"

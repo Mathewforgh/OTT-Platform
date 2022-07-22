@@ -33,7 +33,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/watch_list"
-                    android:textColor="@color/white"
+                    android:textColor="@color/movie_descrip_movie_name"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -61,6 +61,7 @@
                     android:background="@drawable/search_bg"
                     android:drawableEnd="@drawable/ic_search"
                     android:hint="@string/search_movies_sdc_originals"
+                    android:textColorHint="@color/search_box_hint_color"
                     android:inputType="text"
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"

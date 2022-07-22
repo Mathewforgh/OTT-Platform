@@ -51,7 +51,7 @@ class HomeFragment : Fragment() {
         barLayout = ids.barLayout
 
 
-       // setMovies(HomePage.userToken, HomePage.languageList)
+       setMovies(HomePage.userToken, HomePage.languageList)
 
         ids.homePageShareNowBtn.setOnDebounceListener {
             ids.homePageShareNowBtn.startAnimation(this@HomeFragment.activity?.let { it1 ->

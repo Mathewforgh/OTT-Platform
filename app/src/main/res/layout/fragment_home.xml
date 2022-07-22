@@ -24,6 +24,7 @@
             android:scaleType="fitXY"
             android:scrollIndicators="bottom"
             tools:ignore="ContentDescription" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -32,18 +33,24 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="25dp"
             android:layout_marginEnd="24dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/home_page_location_bar"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_weight="1"
                 tools:ignore="UselessParent">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="10dp"
+                    android:layout_gravity="center_vertical"
                     android:src="@drawable/ic_location_home_page"
                     tools:ignore="ContentDescription" />
 
@@ -57,7 +64,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/location_home"
-                        android:textColor="@color/enter_num_txt_color"
+                        android:textColor="@color/locationColor"
                         android:textSize="12sp" />
 
                     <TextView
@@ -69,16 +76,22 @@
                         android:textSize="16sp" />
                 </LinearLayout>
             </LinearLayout>
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_language_home"
+                tools:ignore="ContentDescription" />
         </LinearLayout>
 
-        <ImageView
-            android:layout_width="36dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="26dp"
-            android:layout_marginEnd="24dp"
-            android:src="@drawable/ic_language_home"
-            tools:ignore="ContentDescription" />
+<!--        <ImageView-->
+<!--            android:layout_width="36dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginTop="26dp"-->
+<!--            android:layout_marginEnd="24dp"-->
+<!--            android:src="@drawable/ic_language_home"-->
+<!--            tools:ignore="ContentDescription" />-->
 
         <LinearLayout
             android:id="@+id/play_container"
@@ -87,7 +100,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="240dp"
+            android:layout_marginTop="170dp"
             android:layout_marginBottom="25dp"
             android:gravity="center"
             android:orientation="vertical">
@@ -117,11 +130,13 @@
 
             <TextView
                 android:id="@+id/home_page_bannerMovie_description"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="@drawable/movie_description_bg"
+                android:padding="5dp"
                 android:text="@string/tamil_drama_action_02_30_hrs"
-                android:textColor="@color/enter_num_txt_color"
+                android:textColor="#ffff"
                 android:textSize="12sp" />
 
             <LinearLayout
@@ -153,6 +168,7 @@
                         android:text="@string/home_page_share_now"
                         android:textColor="@color/white"
                         android:textSize="11sp"
+                        android:textStyle="bold"
                         tools:ignore="SmallSp" />
                 </LinearLayout>
 
@@ -178,10 +194,12 @@
                         android:text="@string/home_page_watchlist"
                         android:textColor="@color/white"
                         android:textSize="11sp"
+                        android:textStyle="bold"
                         tools:ignore="SmallSp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/MainRecyclerView"
             android:layout_width="match_parent"

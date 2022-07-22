@@ -24,13 +24,14 @@
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginEnd="10dp"
-            android:src="@drawable/ic_back_arrow_icon" />
+            android:src="@drawable/ic_back_arrow_icon"
+            app:tint="@color/movie_descrip_movie_name" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/settings"
-            android:textColor="@color/white"
+            android:textColor="@color/movie_descrip_movie_name"
             android:textSize="24sp" />
     </LinearLayout>
 
@@ -60,6 +61,8 @@
             android:textStyle="bold"
             android:ellipsize="marquee"
             android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:focusable="true"
             android:maxLines="1"/>
 
         <TextView
@@ -90,7 +93,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/edit_profile"
-            android:textColor="@color/enter_num_txt_color"
+            android:textColor="@color/setting_page_titles"
             android:textSize="16sp"
             android:layout_marginTop="10dp"/>
 
@@ -112,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/autoplay"
                 android:layout_weight="1"
-                android:textColor="@color/enter_num_txt_color"
+                android:textColor="@color/setting_page_titles"
                 android:textSize="16sp"
                 android:layout_marginTop="10dp"/>
 <!--            <ImageView-->
@@ -146,7 +149,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/theme"
-            android:textColor="@color/enter_num_txt_color"
+            android:textColor="@color/setting_page_titles"
             android:textSize="16sp"
             android:layout_marginTop="10dp"/>
 
@@ -163,7 +166,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/help_and_support"
-            android:textColor="@color/enter_num_txt_color"
+            android:textColor="@color/setting_page_titles"
             android:textSize="16sp"
             android:layout_marginTop="10dp"/>
 
@@ -174,9 +177,11 @@
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
             android:background="@drawable/profile_chip_unselected_bg"
+            android:backgroundTint="@color/movie_descrip_movie_name"
             android:drawableStart="@drawable/ic_logout"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
+            android:layout_marginBottom="5dp"
             android:text="@string/logout"
             android:textColor="@color/white"
             android:textStyle="bold" />

@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="ScreenBgColor">#111820</color>
+    <color name="purple_200">#E0008F</color>
+    <color name="purple_500">#E0008F</color>
+    <color name="purple_700">#111820</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_bg">#9CFFFFFF</color>
     <color name="indicatorColor">#E0008F</color>
     <color name="enter_num_txt_color">#8A8B8E</color>
+    <color name="one">#FFDAAA</color>
+    <color name="two">#EAFFAA</color>
     <color name="home_page_btn_bg">#30363e</color>
     <color name="nav_icon_color">#898E93</color>
     <color name="chip_unselected_bg">#328B8C8F</color>
@@ -12,4 +22,22 @@
     <color name="white80">#CCFFFFFF</color>
     <color name="search_divider_color">#25FFFFFF</color>
     <color name="search_divider_color2">#12FFFFFF</color>
+    <color name="homeBannerForground">#111820</color>
+    <color name="homePageCategoryTitle">#FFFFFF</color>
+    <color name="locationColor">#ffff</color>
+    <color name="movie_description_cost_box">#FFFF</color>
+    <color name="movie_description_cost_tv">#000000</color>
+    <color name="movie_descrip_movie_name">#ffff</color>
+    <color name="movie_description_movie_name_bg">#000000</color>
+    <color name="movie_descrip_three_btn_bg">#648B8C8F</color>
+    <color name="starring_color">#B1AEAE</color>
+    <color name="movie_des_starring_des">#FFFFFF</color>
+    <color name="movie_description_color">#8A9098</color>
+    <color name="trailer_btn_bg_color">#648B8C8F</color>
+    <color name="search_box_hint_color">#888B8F</color>
+    <color name="search_box_outline_color">#E0008F</color>
+    <color name="navigation_icon_color">#8A8B8E</color>
+    <color name="loader_bg_color">#D5111820</color>
+    <color name="setting_page_titles">#8A8B8E</color>
+    <color name="intro_bg_color">#111820</color>
 </resources>

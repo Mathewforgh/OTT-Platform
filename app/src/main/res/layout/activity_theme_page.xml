@@ -25,14 +25,15 @@
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginEnd="10dp"
-            android:src="@drawable/ic_back_arrow_icon" />
+            android:src="@drawable/ic_back_arrow_icon"
+            app:tint="@color/movie_descrip_movie_name" />
 
         <TextView
             android:id="@+id/orCallUsNumber_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/theme"
-            android:textColor="@color/white"
+            android:textColor="@color/movie_descrip_movie_name"
             android:textSize="24sp"
             android:textStyle="bold"/>
     </LinearLayout>
@@ -54,7 +55,7 @@
             android:layout_height="wrap_content"
             android:buttonTint="@color/enter_num_txt_color"
             android:text="@string/light_theme"
-            android:textColor="@color/enter_num_txt_color"
+            android:textColor="@color/setting_page_titles"
             android:textSize="16sp"
             android:theme="@style/radioBtnStyle" />
 
@@ -72,7 +73,7 @@
             android:layout_height="wrap_content"
             android:buttonTint="@color/enter_num_txt_color"
             android:text="@string/dark_theme"
-            android:textColor="@color/enter_num_txt_color"
+            android:textColor="@color/setting_page_titles"
             android:textSize="16sp" />
 
         <View
@@ -89,7 +90,7 @@
             android:layout_height="wrap_content"
             android:buttonTint="@color/enter_num_txt_color"
             android:text="@string/system_default"
-            android:textColor="@color/enter_num_txt_color"
+            android:textColor="@color/setting_page_titles"
             android:textSize="16sp"
             android:theme="@style/radioBtnStyle" />
     </RadioGroup>

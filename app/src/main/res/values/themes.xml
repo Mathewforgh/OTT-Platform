@@ -49,4 +49,9 @@
     <style name="customSwitchAutoPlay">
         <item name="colorControlActivated">@android:color/white</item>
     </style>
+
+    //tool bar
+    <style name="AppTheme.ActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionMenuTextColor">@color/movie_descrip_movie_name</item>
+    </style>
 </resources>

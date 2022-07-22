@@ -17,6 +17,7 @@
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/forground_gradient_blue.xml" value="0.3175" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/help_and_support_ic_bg.xml" value="0.335" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/home_page_icons_bg.xml" value="0.2935" />
+        <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/home_page_location_bar.xml" value="0.3065" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/ic_add_watchlist.xml" value="0.301" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/ic_back_arrow_icon.xml" value="0.2135" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/ic_backarrow.xml" value="0.31" />
@@ -29,6 +30,7 @@
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/ic_fullscreen_24.xml" value="0.2455" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/ic_fullscreen_exit_24.xml" value="0.2455" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/ic_logout.xml" value="0.2765" />
+        <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/ic_nointernet.xml" value="0.3065" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/ic_pause.xml" value="0.31" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/ic_play_home_page.xml" value="0.31" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/ic_radio_button_unchecked.xml" value="0.335" />
@@ -43,33 +45,39 @@
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/language_slide.xml" value="0.3015" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/loader.xml" value="0.31" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/loader_bg.xml" value="0.31" />
+        <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/movie_description_bg.xml" value="0.3065" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/plain_bg.xml" value="0.195" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/profile_chip_select_bg.xml" value="0.3175" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/profile_chip_unselected_bg.xml" value="0.3175" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/scrubber_bg_color.xml" value="0.31" />
+        <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/search_bg.xml" value="0.3065" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/search_page_bg.xml" value="0.301" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/see_all_search_list.xml" value="0.301" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/settings_card_bg.xml" value="0.2765" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/success_payment_bg.xml" value="0.3175" />
+        <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/swiggy_order_now_bg.xml" value="0.3065" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/switch_track_selector.xml" value="0.31" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/tick_unselect.xml" value="0.301" />
+        <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/trailer_btn_bg.xml" value="0.3065" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/watch_list_gradient.xml" value="0.301" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/drawable/watch_party_bg.xml" value="0.2465" />
+        <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout-v26/activity_movie_description.xml" value="0.3614583333333333" />
+        <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout-v28/activity_movie_description.xml" value="0.3625" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout-v28/activity_theme_page.xml" value="0.3625" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout/activity_edit_profile.xml" value="0.2936708860759494" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout/activity_help_and_support.xml" value="0.31351351351351353" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout/activity_home_page.xml" value="0.30933333333333335" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout/activity_language_selection_page.xml" value="0.31351351351351353" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout/activity_login_sign_page.xml" value="0.31351351351351353" />
-        <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout/activity_main.xml" value="0.87" />
+        <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout/activity_main.xml" value="0.31351351351351353" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout/activity_movie_description.xml" value="0.31351351351351353" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout/activity_movie_player.xml" value="0.30933333333333335" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout/activity_otp_verification_page.xml" value="0.31351351351351353" />
-        <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout/activity_proceed_to_pyment.xml" value="1.9417808219178083" />
+        <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout/activity_proceed_to_pyment.xml" value="0.31351351351351353" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout/activity_rate_movie.xml" value="0.30933333333333335" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout/activity_see_all_movies.xml" value="0.30933333333333335" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout/activity_settings_page.xml" value="0.31351351351351353" />
-        <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout/activity_sign_in_page.xml" value="0.45594713656387664" />
+        <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout/activity_sign_in_page.xml" value="0.31351351351351353" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout/activity_sign_up_page.xml" value="0.25" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout/activity_splash_screen.xml" value="0.3625" />
         <entry key="..\:/Users/serve/AndroidStudioProjects/SDC/app/src/main/res/layout/activity_suggested_movie_for_you.xml" value="0.30933333333333335" />
