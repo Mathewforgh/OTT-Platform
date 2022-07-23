@@ -32,7 +32,8 @@
             android:layout_marginTop="16dp"
             android:src="@drawable/ic_back_arrow_icon"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/movie_descrip_movie_name" />
 
         <LinearLayout
             android:id="@+id/descrip_rentNow_btn"
@@ -333,13 +334,10 @@
 
             <Button
                 android:id="@+id/watchList_btn"
-                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
                 android:layout_weight="1"
                 android:background="@drawable/profile_chip_unselected_bg"
-                android:drawableStart="@drawable/ic_add_watchlist"
-                android:drawableTint="@color/movie_descrip_movie_name"
                 android:paddingStart="10dp"
                 android:paddingTop="5dp"
                 android:paddingEnd="15dp"

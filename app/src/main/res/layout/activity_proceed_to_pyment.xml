@@ -149,7 +149,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/ic_check" />
+                    android:src="@drawable/ic_check"
+                    app:tint="@color/movie_descrip_movie_name" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -174,7 +175,8 @@
                     android:layout_height="wrap_content"
                     android:padding="2dp"
                     android:src="@drawable/ic_unselect_button"
-                    android:visibility="visible" />
+                    android:visibility="visible"
+                    app:tint="@color/movie_descrip_movie_name"/>
 
                 <ImageView
                     android:id="@+id/payNow_check_tick1"

@@ -123,7 +123,7 @@ class HomeFragment : Fragment() {
                                         changeNames()
                                         super.onPageScrolled(position, positionOffset, positionOffsetPixels)
                                         if (Store.watchList)
-                                            ids.watchListImg.setImageResource(R.drawable.ic_check)
+                                            ids.watchListImg.setImageResource(R.drawable.ic_watchlist_tick)
                                         else
                                             ids.watchListImg.setImageResource(R.drawable.add_watchlist)
                                     }
@@ -226,7 +226,7 @@ class HomeFragment : Fragment() {
                 if (Store.from == "guest"){
                     startActivity(Intent(this@HomeFragment.activity, LoginSignPage::class.java))
                 }else if (Store.currentBannerNum == homePageBannerViewPager.currentItem.toString()){
-                    watchListImg.setImageResource(R.drawable.ic_check)
+                    watchListImg.setImageResource(R.drawable.ic_watchlist_tick)
                     addToWatchList(Store.currentBannerToken)
                     setMovies(HomePage.userToken, HomePage.languageList)
                 }

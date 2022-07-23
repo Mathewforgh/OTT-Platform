@@ -164,7 +164,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/prefered_language"
-                    android:textColor="@color/white"
+                    android:textColor="@color/movie_descrip_movie_name"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -199,7 +199,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/app_language"
-                android:textColor="@color/white"
+                android:textColor="@color/movie_descrip_movie_name"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 

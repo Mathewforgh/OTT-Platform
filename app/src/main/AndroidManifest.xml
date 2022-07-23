@@ -24,6 +24,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".RateMovie"
             android:exported="false" />
         <activity
@@ -87,16 +96,6 @@
         <activity
             android:name=".LoginSignPage"
             android:exported="false" />
-        <activity
-            android:name=".SplashScreenActivity"
-            android:exported="true"
-            android:theme="@style/SplashScreenTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <!-- face Book start-->
         <activity
             android:name="com.facebook.FacebookActivity"

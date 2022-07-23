@@ -192,9 +192,8 @@ class MovieDescription : AppCompatActivity(), ConnectionReceiver.ConnectionRecei
                             Toast.LENGTH_SHORT).show()
                         Store.currentBannerToken = ""
 
-                        val img = resources.getDrawable(R.drawable.ic_check)                                         // change the img to tick on click
+                        val img = resources.getDrawable(R.drawable.ic_check) // change the img to tick on click
                         ids.watchListBtn.setCompoundDrawablesWithIntrinsicBounds(img,null,null,null)
-
                     } else if (response.body()?.code == 503) {
                         val bar: Snackbar = Snackbar.make(barLayot,
                             response.body()?.message.toString(),
@@ -326,6 +325,15 @@ class MovieDescription : AppCompatActivity(), ConnectionReceiver.ConnectionRecei
                         if (response.isSuccessful) {
                             loader.dismiss()
                             if (response.body()?.code == 201) {
+                                isRented = response.body()?.movieDetails!!.isRented!!
+                                if (isRented) {
+                                    ids.rentNowTv.text = getString(R.string.playNow)
+                                    ids.constraintLayout2.visibility = View.GONE
+                                    ids.watchPartyBtn.visibility = View.VISIBLE
+                                    Store.movieLink = response.body()?.movieDetails!!.movie_link.toString()
+                                    Log.i("test", "while isRented true--Store.movieLink ${Store.movieLink} ")
+                                }
+
                                 Store.posterLink =
                                     response.body()?.movieDetails?.posterLink.toString()
 
@@ -371,10 +379,10 @@ class MovieDescription : AppCompatActivity(), ConnectionReceiver.ConnectionRecei
                                     LinearLayoutManager(this@MovieDescription,
                                         LinearLayoutManager.HORIZONTAL,
                                         false)
-//                            if (response.body()?.searchTitle == "Suggestion") {
+
                                 ids.descriptionPageRecyclerView.adapter =
                                     SuggestionMoviesAdapter(response.body()?.suggestions!!)
-//                            }
+
                                 ids.descriptionPagePlayTrailerBtn.setOnDebounceListener {
                                     Store.movieLink =
                                         response.body()?.movieDetails!!.trailer_link.toString()
@@ -382,16 +390,7 @@ class MovieDescription : AppCompatActivity(), ConnectionReceiver.ConnectionRecei
                                     startActivity(Intent(this@MovieDescription,
                                         MoviePlayer::class.java))
                                 }
-                                isRented = response.body()?.movieDetails!!.isRented!!
-                                if (isRented) {
-//                                    fullMovieLink =
-//                                        response.body()?.movieDetails!!.movie_link.toString()
-                                    ids.rentNowTv.text = getString(R.string.playNow)
-                                    ids.constraintLayout2.visibility = View.GONE
-                                    ids.watchPartyBtn.visibility = View.VISIBLE
-                                    Store.movieLink = response.body()?.movieDetails!!.movie_link.toString()
-                                    Log.i("test", "while isRented true--Store.movieLink ${Store.movieLink} ")
-                                }
+
                                 if (Store.payState == "true" || Store.code == "redeemed") {
                                     Store.movieLink =
                                         response.body()?.movieDetails?.movie_link.toString()
@@ -434,6 +433,10 @@ class MovieDescription : AppCompatActivity(), ConnectionReceiver.ConnectionRecei
                                 Store.watchList = response.body()?.movieDetails?.isWatchlist!!
                                 if (Store.watchList){
                                     val img = resources.getDrawable(R.drawable.ic_check)
+                                    ids.watchListBtn.setCompoundDrawablesWithIntrinsicBounds(img,null,null,null)
+                                }
+                                else{
+                                    val img = resources.getDrawable(R.drawable.ic_add_watchlist)
                                     ids.watchListBtn.setCompoundDrawablesWithIntrinsicBounds(img,null,null,null)
                                 }
                             }
@@ -488,7 +491,7 @@ class MovieDescription : AppCompatActivity(), ConnectionReceiver.ConnectionRecei
 
     override fun onResume() {
         super.onResume()
-//        setMoviesDescription(userToken, Store.movieTokenSet)
+        setMoviesDescription(userToken, Store.movieTokenSet)
         /* Coupon code redeemed Bottom sheet set up*/
         val botSheet: View = layoutInflater.inflate(R.layout.redeem_coupon_layout, null)
         val dialog2 = BottomSheetDialog(this, R.style.ThemeOverlay_App_BottomSheetDialog)

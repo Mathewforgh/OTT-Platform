@@ -185,7 +185,7 @@
                         android:id="@+id/watchListImg"
                         android:layout_width="14dp"
                         android:layout_height="14dp"
-                        android:contentDescription="@string/plus" />
+                        android:contentDescription="@string/plus"/>
 
                     <TextView
                         android:layout_width="wrap_content"

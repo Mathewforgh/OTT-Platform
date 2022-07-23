@@ -24,6 +24,8 @@ class SplashScreenActivity : AppCompatActivity() {
 
     @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
+        // check theme
+        SetTheme(this@SplashScreenActivity).checkTheme()
         super.onCreate(savedInstanceState)
         setContentView(ids.root)
 

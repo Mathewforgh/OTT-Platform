@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/drama"
-                android:textColor="@color/enter_num_txt_color"
+                android:textColor="@color/setting_page_titles"
                 android:textSize="16sp" />
 
             <ImageView

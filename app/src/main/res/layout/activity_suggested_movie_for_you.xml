@@ -27,7 +27,8 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_back_arrow_icon" />
+                android:src="@drawable/ic_back_arrow_icon"
+                app:tint="@color/movie_descrip_movie_name" />
 
             <TextView
                 android:id="@+id/search_title2"
@@ -35,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:text="@string/suggested_movies_for_you"
-                android:textColor="@color/white"
+                android:textColor="@color/movie_descrip_movie_name"
                 android:textSize="21sp" />
         </LinearLayout>
 

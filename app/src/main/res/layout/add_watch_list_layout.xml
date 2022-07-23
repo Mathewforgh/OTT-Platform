@@ -57,6 +57,13 @@
             android:layout_height="wrap_content"
             android:text="@string/tamil_3_more_02_30hrs"
             android:textSize="12sp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
             android:textColor="@color/white"/>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

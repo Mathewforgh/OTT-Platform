@@ -16,6 +16,8 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        vectorDrawables.useSupportLibrary = true
     }
 
     buildTypes {
@@ -87,10 +89,14 @@ dependencies {
 
 ////enables the deep links
     implementation 'com.google.firebase:firebase-dynamic-links-ktx:21.0.1'
-    implementation 'com.google.firebase:firebase-core:21.0.0'
+    implementation 'com.google.firebase:firebase-core:21.1.0'
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation platform('com.google.firebase:firebase-bom:30.1.0')
 
     //swipe to refresh
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    //for vector graphics
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:23.2.0'
 }
