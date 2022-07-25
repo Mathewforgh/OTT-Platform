@@ -30,15 +30,13 @@ class ThemePage : AppCompatActivity() {
                 "Light Theme" -> lightTheme.isChecked = true
                 "Dark Theme" -> darkTheme.isChecked = true
                 "System Default" -> systemDefault.isChecked = true
-                else -> systemDefault.isChecked = true
+                else -> darkTheme.isChecked = true
             }
         }
 
 
-        ids.themeSaveBtn.setOnClickListener {
-           val themeID: Int = ids.radioGroup.checkedRadioButtonId
-            val themeName = findViewById<Button>(themeID)
-
+        ids.radioGroup.setOnCheckedChangeListener { _, checkedId ->
+            val themeName = findViewById<Button>(checkedId)
             when (themeName.text) {
                 "Dark Theme" -> {
                     sharedPreferences.edit().apply{
@@ -66,5 +64,8 @@ class ThemePage : AppCompatActivity() {
                 }
             }
         }
+//        ids.themeSaveBtn.setOnDebounceListener {
+//            finish()
+//        }
     }
 }
