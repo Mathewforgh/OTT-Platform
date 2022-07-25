@@ -63,6 +63,7 @@ object Store {
 
     var tempVar: String = ""
     var internet: String = "1"
+    var theme: String = ""
 
     var socialIdFrom: String= ""
     var socialId: String = ""

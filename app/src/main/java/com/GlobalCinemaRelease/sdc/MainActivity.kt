@@ -11,6 +11,7 @@ import com.GlobalCinemaRelease.sdc.adapters.ViewPagerAdapter
 import com.GlobalCinemaRelease.sdc.databinding.ActivityMainBinding
 import com.GlobalCinemaRelease.sdc.msg.listener.setOnDebounceListener
 import com.GlobalCinemaRelease.sdc.msg.toast
+import com.GlobalCinemaRelease.sdc.obj.Store
 
 @Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
@@ -20,15 +21,17 @@ class MainActivity : AppCompatActivity() {
         var showIntro = "intro"
     }
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        sharedPreferences = getSharedPreferences("myPref", Context.MODE_PRIVATE)
+        if (!sharedPreferences.getBoolean(showIntro, true) && Store.theme == ""){
+            startActivity(Intent(this@MainActivity, LoginSignPage::class.java))
+        }
+
         super.onCreate(savedInstanceState)
         setContentView(ids.root)
-        sharedPreferences = getSharedPreferences("myPref", Context.MODE_PRIVATE)
 
         val image = ArrayList<ViewPagerData>()
 
-        if (!sharedPreferences.getBoolean(showIntro, true)){
-            startActivity(Intent(this@MainActivity, LoginSignPage::class.java))
-        }
 
         image.add(ViewPagerData(R.drawable.intro1,R.string.title1,R.string.title2))
         image.add(ViewPagerData(R.drawable.intro2,R.string.title3,R.string.title4))

@@ -25,19 +25,24 @@ class LoginSignPage : AppCompatActivity() {
         /*-----------------*/
 
         ids.loginSignupBtn.setOnDebounceListener {
-            Store.from = ""
-            startActivity(Intent(this,SignInPage::class.java))
             loader.show()
+            Store.from = ""
+            startActivity(Intent(this@LoginSignPage,SignInPage::class.java))
         }
         ids.guestBtn.setOnDebounceListener {
+            loader.show()
             Store.from = "guest"
             startActivity(Intent(this@LoginSignPage, HomePage::class.java))
-            loader.show()
         }
     }
 
     override fun onBackPressed() {
         finishAffinity()
         super.onBackPressed()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        loader.cancel()
     }
 }

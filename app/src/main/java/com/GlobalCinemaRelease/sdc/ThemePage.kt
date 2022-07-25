@@ -35,7 +35,7 @@ class ThemePage : AppCompatActivity() {
         }
 
 
-        ids.themeSaveBtn.setOnDebounceListener {
+        ids.themeSaveBtn.setOnClickListener {
            val themeID: Int = ids.radioGroup.checkedRadioButtonId
             val themeName = findViewById<Button>(themeID)
 
@@ -45,6 +45,7 @@ class ThemePage : AppCompatActivity() {
                         putString("ThemeName", themeName.text.toString())
                         apply()
                     }
+                    Store.theme = "theme"
                     SetTheme(this@ThemePage).checkTheme()
                 }
                 "Light Theme" -> {
@@ -52,6 +53,7 @@ class ThemePage : AppCompatActivity() {
                         putString("ThemeName", themeName.text.toString())
                         apply()
                     }
+                    Store.theme = "theme"
                     SetTheme(this@ThemePage).checkTheme()
                 }
                 "System Default" ->{
@@ -59,6 +61,7 @@ class ThemePage : AppCompatActivity() {
                         putString("ThemeName", themeName.text.toString())
                         apply()
                     }
+                    Store.theme = "theme"
                     SetTheme(this@ThemePage).checkTheme()
                 }
             }

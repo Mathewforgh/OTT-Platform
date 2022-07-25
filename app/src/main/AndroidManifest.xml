@@ -14,7 +14,6 @@
     <application
         android:name=".msg.MyApp"
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/sdc_logo"
         android:label="@string/app_name"
@@ -22,11 +21,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SDC"
         android:usesCleartextTraffic="true"
-        tools:targetApi="31">
+        tools:ignore="DataExtractionRules"
+        tools:targetApi="m">
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true"
-            android:theme="@style/SplashScreenTheme">
+            android:theme="@style/SplashScreenTheme"
+            android:configChanges="uiMode">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -96,6 +97,7 @@
         <activity
             android:name=".LoginSignPage"
             android:exported="false" />
+
         <!-- face Book start-->
         <activity
             android:name="com.facebook.FacebookActivity"
@@ -149,3 +151,18 @@
     </application>
 
 </manifest>
+
+<!--  data, while not install android 8.1
+<application
+        android:name=".msg.MyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/sdc_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/sdc_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SDC"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+-->

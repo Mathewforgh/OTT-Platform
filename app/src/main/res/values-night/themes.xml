@@ -11,9 +11,9 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+<!--         Customize your theme here. -->
         <item name="android:windowAnimationStyle">@style/WindowAnimation</item>
-<!--       -->
+
     </style>
 
     <style name="WindowAnimation">
