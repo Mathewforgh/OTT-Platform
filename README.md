@@ -1,1 +1,1 @@
-# SDC
+# Online movies watching app
